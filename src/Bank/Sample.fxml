@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bank.Controller">
+    <children>
+        <AnchorPane fx:id="second_scene" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #F0F4C3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #880E4F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <JFXButton fx:id="btn_01" layoutX="-1.0" layoutY="80.0" mnemonicParsing="false" onAction="#btn01OnAction" onMouseEntered="#btn01OnMouseEntered" onMouseExited="#btn01OnMouseExited" prefHeight="25.0" prefWidth="197.0" text="Put Money" textFill="WHITE" />
+                        <JFXButton fx:id="btn_02" layoutX="-1.0" layoutY="105.0" mnemonicParsing="false" onAction="#btn02OnAction" onMouseEntered="#btn02OnMouseEntered" onMouseExited="#btn02OnMouseExited" prefHeight="25.0" prefWidth="197.0" text="Card to Card" textFill="WHITE" />
+                        <JFXButton fx:id="btn_03" layoutX="-1.0" layoutY="130.0" mnemonicParsing="false" onAction="#btn03OnAction" onMouseEntered="#btn03OnMouseEntered" onMouseExited="#btn03OnMouseExited" prefHeight="25.0" prefWidth="197.0" text="Account to Account" textFill="WHITE" />
+                        <JFXButton fx:id="btn_04" layoutX="-1.0" layoutY="155.0" mnemonicParsing="false" onAction="#btn04OnAction" onMouseEntered="#btn04OnMouseEntered" onMouseExited="#btn04OnMouseExited" prefHeight="25.0" prefWidth="197.0" text="Get Money" textFill="WHITE" />
+                        <JFXButton fx:id="btn_05" layoutX="-1.0" layoutY="180.0" mnemonicParsing="false" onAction="#btn05OnAction" onMouseEntered="#btn05OnMouseEntered" onMouseExited="#btn05OnMouseExited" prefHeight="25.0" prefWidth="197.0" text="Change Pass" textFill="WHITE" />
+                        <JFXButton fx:id="btn_06" layoutX="-1.0" layoutY="205.0" mnemonicParsing="false" onAction="#btn06OnAction" onMouseEntered="#btn06OnMouseEntered" onMouseExited="#btn06OnMouseExited" prefHeight="25.0" prefWidth="197.0" text="Get Checks" textFill="WHITE" />
+                        <JFXButton fx:id="btn_07" layoutX="-1.0" layoutY="230.0" mnemonicParsing="false" onAction="#btn07OnAction" onMouseEntered="#btn07OnMouseEntered" onMouseExited="#btn07OnMouseExited" prefHeight="25.0" prefWidth="197.0" text="Reach Checks" textFill="WHITE" />
+                        <JFXButton fx:id="btn_08" layoutX="-1.0" layoutY="255.0" mnemonicParsing="false" onAction="#btn08OnAction" onMouseEntered="#btn08OnMouseEntered" onMouseExited="#btn08OnMouseExited" prefHeight="25.0" prefWidth="197.0" text="Get Card" textFill="WHITE" />
+                        <JFXButton fx:id="btn_09" layoutX="-1.0" layoutY="280.0" mnemonicParsing="false" onAction="#btn09OnAction" onMouseEntered="#btn09OnMouseEntered" onMouseExited="#btn09OnMouseExited" prefHeight="25.0" prefWidth="197.0" text="Get Loan" textFill="WHITE" />
+                        <JFXButton fx:id="btn_10" layoutX="-1.0" layoutY="305.0" mnemonicParsing="false" onAction="#btn10OnAction" onMouseEntered="#btn10OnMouseEntered" onMouseExited="#btn10OnMouseExited" prefHeight="25.0" prefWidth="197.0" text="Pay Loans" textFill="WHITE" />
+                        <Pane fx:id="pane01" layoutX="-3.0" layoutY="80.0" prefHeight="25.0" prefWidth="7.0" style="-fx-background-color: fff;" visible="false" />
+                        <Pane fx:id="pane02" layoutX="-3.0" layoutY="105.0" prefHeight="25.0" prefWidth="7.0" style="-fx-background-color: fff;" visible="false" />
+                        <Pane fx:id="pane03" layoutX="-3.0" layoutY="130.0" prefHeight="25.0" prefWidth="7.0" style="-fx-background-color: fff;" visible="false" />
+                        <Pane fx:id="pane04" layoutX="-3.0" layoutY="155.0" prefHeight="25.0" prefWidth="7.0" style="-fx-background-color: fff;" visible="false" />
+                        <Pane fx:id="pane05" layoutX="-3.0" layoutY="180.0" prefHeight="25.0" prefWidth="7.0" style="-fx-background-color: fff;" visible="false" />
+                        <Pane fx:id="pane06" layoutX="-3.0" layoutY="205.0" prefHeight="25.0" prefWidth="7.0" style="-fx-background-color: fff;" visible="false" />
+                        <Pane fx:id="pane07" layoutX="-3.0" layoutY="230.0" prefHeight="25.0" prefWidth="7.0" style="-fx-background-color: fff;" visible="false" />
+                        <Pane fx:id="pane08" layoutX="-3.0" layoutY="255.0" prefHeight="25.0" prefWidth="7.0" style="-fx-background-color: fff;" visible="false" />
+                        <Pane fx:id="pane09" layoutX="-3.0" layoutY="280.0" prefHeight="25.0" prefWidth="7.0" style="-fx-background-color: fff;" visible="false" />
+                        <Pane fx:id="pane10" layoutX="-3.0" layoutY="305.0" prefHeight="25.0" prefWidth="7.0" style="-fx-background-color: fff;" visible="false" />
+                        <JFXButton fx:id="btn_00" layoutX="-1.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn00OnAction" onMouseEntered="#btn00OnMouseEntered" onMouseExited="#btn00OnMouseExited" prefHeight="25.0" prefWidth="197.0" text="Your Profile" textFill="WHITE" />
+                        <Pane fx:id="pane00" layoutX="-3.0" layoutY="14.0" prefHeight="25.0" prefWidth="7.0" style="-fx-background-color: #ffffff;" visible="false" />
+                        <JFXButton fx:id="btn_11" layoutX="-1.0" layoutY="55.0" mnemonicParsing="false" onAction="#btn11OnAction" onMouseEntered="#btn11OnMouseEntered" onMouseExited="#btn11OnMouseExited" prefHeight="25.0" prefWidth="197.0" text="Create Account" textFill="WHITE" />
+                        <Pane fx:id="pane11" layoutX="-3.0" layoutY="55.0" prefHeight="25.0" prefWidth="7.0" style="-fx-background-color: fff;" visible="false" />
+                        <JFXButton fx:id="btn12" layoutX="-1.0" layoutY="330.0" mnemonicParsing="false" onAction="#btn12OnAction" onMouseEntered="#btn12OnMouseEntered" onMouseExited="#btn12OnMouseExited" prefHeight="25.0" prefWidth="197.0" text="Pay Bills" textFill="WHITE" />
+                        <Pane fx:id="pane12" layoutX="-3.0" layoutY="330.0" prefHeight="25.0" prefWidth="7.0" style="-fx-background-color: fff;" visible="false" />
+                    </children>
+                </Pane>
+                <Label text="Bankie Bankie" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="65.0" />
+                <Pane fx:id="changePassPane" layoutX="189.0" prefHeight="400.0" prefWidth="610.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="189.60000000000002" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <JFXTextField focusColor="#880e4f" labelFloat="true" layoutX="90.0" layoutY="80.0" promptText="old password" unFocusColor="#880e4f" />
+                        <JFXPasswordField focusColor="#880e4f" labelFloat="true" layoutX="90.0" layoutY="150.0" promptText="new password" unFocusColor="#880e4f" />
+                        <JFXPasswordField focusColor="#880e4f" labelFloat="true" layoutX="90.0" layoutY="220.0" promptText="confirm password" unFocusColor="#880e4f" />
+                        <JFXButton layoutX="90.0" layoutY="315.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="confirm" textFill="#880e4f" />
+                        <Label layoutX="90.0" layoutY="271.0" text="invalid old password or new passwords do not match !" textFill="#c51162" />
+                    </children></Pane>
+                <Pane fx:id="getLoanPane" layoutX="189.0" prefHeight="400.0" prefWidth="610.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="189.60000000000002" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Label layoutX="56.0" layoutY="82.0" text="It is almost impossible to get loan from our bank but do not be disappointed and fill this form :)" textFill="#880e4f" />
+                        <JFXTextField focusColor="#880e4f" labelFloat="true" layoutX="56.0" layoutY="140.0" promptText="installment" unFocusColor="#880e4f" />
+                        <JFXTextField focusColor="#880e4f" labelFloat="true" layoutX="56.0" layoutY="200.0" promptText="number of installments" unFocusColor="#880e4f" />
+                        <JFXTextField focusColor="#880e4f" labelFloat="true" layoutX="56.0" layoutY="260.0" promptText="account number" unFocusColor="#880e4f" />
+                        <JFXButton layoutX="56.0" layoutY="325.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="confirm" textFill="#c51162" />
+                    </children></Pane>
+                <Pane fx:id="reachCheckPane" layoutX="189.0" prefHeight="400.0" prefWidth="610.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="189.60000000000002" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <JFXTextField focusColor="#880e4f" labelFloat="true" layoutX="103.0" layoutY="80.0" promptText="check amount" unFocusColor="#880e4f" />
+                        <JFXTextField focusColor="#880e4f" labelFloat="true" layoutX="103.0" layoutY="150.0" promptText="account number" unFocusColor="#880e4f" />
+                        <JFXButton layoutX="103.0" layoutY="220.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="confirm" textFill="#880e4f" />
+                    </children></Pane>
+                <Pane fx:id="payLoanPane" layoutX="189.0" prefHeight="400.0" prefWidth="610.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="189.60000000000002" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <JFXTextField focusColor="#880e4f" labelFloat="true" layoutX="80.0" layoutY="80.0" promptText="amount of installment" unFocusColor="#880e4f" />
+                        <JFXTextField focusColor="#880e4f" labelFloat="true" layoutX="80.0" layoutY="150.0" promptText="from which account" unFocusColor="#880e4f" />
+                        <JFXButton layoutX="80.0" layoutY="220.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="confirm" textFill="#880e4f" />
+                    </children></Pane>
+                <Pane fx:id="cardToCardPane" layoutX="189.0" prefHeight="400.0" prefWidth="610.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="189.60000000000002" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Label layoutX="110.0" layoutY="87.0" text="From" />
+                        <JFXTextField focusColor="#880e4f" labelFloat="true" layoutX="170.0" layoutY="83.0" promptText="card number" unFocusColor="#880e4f" />
+                        <JFXTextField focusColor="#880e4f" labelFloat="true" layoutX="388.0" layoutY="83.0" promptText="card number" unFocusColor="#880e4f" />
+                        <Label layoutX="336.0" layoutY="87.0" text="to" />
+                        <JFXButton layoutX="170.0" layoutY="274.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="confirm" textFill="#c51162" />
+                        <Label layoutX="170.0" layoutY="200.0" text="invalid card number or password !" textFill="#c51162" />
+                        <JFXPasswordField focusColor="#880e4f" labelFloat="true" layoutX="170.0" layoutY="158.0" promptText="card password" unFocusColor="#880e4f" />
+                    </children></Pane>
+            <Pane fx:id="createAccountPane" prefHeight="400.0" prefWidth="610.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="189.60000000000002" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="209.0" layoutY="45.0" text="choose your account type :" textFill="#880e4f" />
+                  <VBox layoutX="213.0" layoutY="78.0" prefHeight="122.0" prefWidth="135.0">
+                     <children>
+                        <JFXRadioButton fx:id="borrow_account" mnemonicParsing="false" text="Borrow Account">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                           <selectedColor>
+                              <Color red="0.5333333611488342" green="0.054901961237192154" blue="0.30980393290519714" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="current_account" mnemonicParsing="false" text="Current Account">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                           <selectedColor>
+                              <Color red="0.5333333611488342" green="0.054901961237192154" blue="0.30980393290519714" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="saving_account" mnemonicParsing="false" text="Saving Account">
+                           <selectedColor>
+                              <Color red="0.5333333611488342" green="0.054901961237192154" blue="0.30980393290519714" />
+                           </selectedColor>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin></JFXRadioButton>
+                        <JFXRadioButton fx:id="long_account" mnemonicParsing="false" text="Long Term Account">
+                           <selectedColor>
+                              <Color red="0.5333333611488342" green="0.054901961237192154" blue="0.30980393290519714" />
+                           </selectedColor>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin></JFXRadioButton>
+                        <JFXRadioButton fx:id="small_account" mnemonicParsing="false" text="Small Term Account">
+                           <selectedColor>
+                              <Color red="0.5333333611488342" green="0.054901961237192154" blue="0.30980393290519714" />
+                           </selectedColor>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin></JFXRadioButton>
+                     </children>
+                  </VBox>
+                  <JFXTextField fx:id="primary_balance" focusColor="#880e4f" labelFloat="true" layoutX="213.0" layoutY="222.0" promptText="primary balance" unFocusColor="#880e4f" />
+                  <JFXButton fx:id="confirmPane11" layoutX="221.0" layoutY="312.0" mnemonicParsing="false" onAction="#cPane11Action" prefHeight="25.0" prefWidth="119.0" text="confirm" textFill="#880e4f" />
+                  <Label fx:id="invalidPane11" layoutX="371.0" layoutY="267.0" text="invalid balance or account type !" textFill="#c51162" visible="false" />
+                  <JFXPasswordField fx:id="second_pass" focusColor="#880e4f" labelFloat="true" layoutX="213.0" layoutY="263.0" promptText="second pass" unFocusColor="#880e4f" />
+                  <Label fx:id="validPane11" layoutX="213.0" layoutY="349.0" text="Account created successfully !" textFill="#00c853" visible="false" />
+               </children></Pane>
+                <Pane fx:id="putMoneyPane" layoutX="189.0" prefHeight="400.0" prefWidth="610.0" style="-fx-background-color: fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="189.60000000000002" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Label layoutX="209.0" layoutY="80.0" text="wanna put money in your account??" textFill="#880e4f" />
+                        <Label fx:id="infoPane01" layoutX="222.0" layoutY="318.0" text="your account balance updated !" textFill="#00C853" visible="false" />
+                        <JFXTextField fx:id="accountNumberPane01" focusColor="#880e4f" labelFloat="true" layoutX="238.0" layoutY="126.0" promptText="account number" unFocusColor="#880e4f" />
+                        <JFXTextField fx:id="amountPane01" focusColor="#880e4f" labelFloat="true" layoutX="238.0" layoutY="187.0" promptText="how much??" unFocusColor="#880e4f" />
+                        <JFXButton fx:id="confirmPane01" layoutX="238.0" layoutY="278.0" mnemonicParsing="false" onAction="#cPane01Action" prefHeight="25.0" prefWidth="135.0" text="confirm" textFill="#880e4f" />
+                        <Label fx:id="invalidPane01" layoutX="238.0" layoutY="228.0" text="invalid account number or amount of money !" textFill="#c51162" visible="false" />
+                    </children></Pane>
+                <Pane fx:id="getMoneyPane" layoutX="189.0" prefHeight="400.0" prefWidth="610.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="189.60000000000002" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Label layoutX="209.0" layoutY="80.0" text="wanna get money from your account??" textFill="#880e4f" />
+                        <JFXTextField fx:id="accountNumberPane04" focusColor="#880e4f" labelFloat="true" layoutX="238.0" layoutY="126.0" promptText="account number" unFocusColor="#880e4f" />
+                        <JFXTextField fx:id="amountPane04" focusColor="#880e4f" labelFloat="true" layoutX="238.0" layoutY="187.0" promptText="how much??" unFocusColor="#880e4f" />
+                        <JFXButton fx:id="confirmPane04" layoutX="238.0" layoutY="278.0" mnemonicParsing="false" onAction="#cPane04Action" prefHeight="25.0" prefWidth="131.0" text="confirm" textFill="#880e4f" />
+                        <Label fx:id="invalidPane04" layoutX="238.0" layoutY="228.0" text="invalid account number or amount of money !" textFill="#c51162" visible="false" />
+                        <Label fx:id="infoPane04" layoutX="221.0" layoutY="319.0" text="your account balance updated !" textFill="#00c853" visible="false" />
+                    </children></Pane>
+                <Pane fx:id="getCardPane" layoutX="189.0" prefHeight="400.0" prefWidth="610.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="189.60000000000002" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Label layoutX="94.0" layoutY="75.0" text="You need to have at least one current account or borrow account !" textFill="#880e4f" />
+                        <JFXTextField fx:id="accountNumberPane08" focusColor="#880e4f" labelFloat="true" layoutX="94.0" layoutY="121.0" promptText="account number" unFocusColor="#880e4f" />
+                        <Label fx:id="invalidPane08" layoutX="94.0" layoutY="168.0" text="invalid account number or primary balance or second pass are empty !" textFill="#c51162" visible="false" />
+                        <JFXButton fx:id="confirmPane08" layoutX="94.0" layoutY="217.0" mnemonicParsing="false" onAction="#cPane08Action" prefHeight="25.0" prefWidth="135.0" text="confirm" textFill="#880e4f" />
+                        <Label fx:id="validPane08" layoutX="79.0" layoutY="258.0" text="your card created successfully !" textFill="#00c853" visible="false" />
+                        <JFXTextField fx:id="primary_balancePane08" focusColor="#880e4f" labelFloat="true" layoutX="270.0" layoutY="121.0" promptText="primary balance" unFocusColor="#880e4f" />
+                        <JFXPasswordField fx:id="second_passPane08" focusColor="#880e4f" labelFloat="true" layoutX="446.0" layoutY="121.0" promptText="second pass" unFocusColor="#880e4f" />
+                    </children></Pane>
+                <Pane fx:id="getChecksPane" layoutX="189.0" prefHeight="400.0" prefWidth="610.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="189.60000000000002" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Label layoutX="94.0" layoutY="75.0" text="At first you need to have at least one current account !" textFill="#880e4f" />
+                        <JFXTextField fx:id="accountNumberPane06" focusColor="#880e4f" labelFloat="true" layoutX="94.0" layoutY="121.0" promptText="account number" unFocusColor="#880e4f" />
+                        <JFXButton fx:id="confirmPane06" layoutX="94.0" layoutY="217.0" mnemonicParsing="false" onAction="#cPane06Action" prefHeight="25.0" prefWidth="135.0" text="confirm" textFill="#880e4f" />
+                        <Label fx:id="invalidPane06" layoutX="94.0" layoutY="168.0" text="invalid account number or your balance is not enough !" textFill="#c51162" visible="false" />
+                        <JFXTextField fx:id="checkAmountPane06" focusColor="#880e4f" labelFloat="true" layoutX="320.0" layoutY="121.0" promptText="check amount" unFocusColor="#880e4f" />
+                        <Label fx:id="validPane06" layoutX="76.0" layoutY="274.0" text="your check created successfully !" textFill="#00c853" visible="false" />
+                    </children></Pane>
+            <Pane fx:id="payBillPane" prefHeight="400.0" prefWidth="610.0" style="-fx-background-color: fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="189.60000000000002" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXTextField fx:id="billCode" focusColor="#880e4f" labelFloat="true" layoutX="87.0" layoutY="73.0" promptText="bill code" unFocusColor="#880e4f" />
+                  <JFXTextField fx:id="bill_payment" focusColor="#880e4f" labelFloat="true" layoutX="263.0" layoutY="73.0" promptText="bill payment" unFocusColor="#880e4f" />
+                  <JFXTextField fx:id="accountNumberPane12" focusColor="#880e4f" labelFloat="true" layoutX="87.0" layoutY="161.0" promptText="account number" unFocusColor="#880e4f" />
+                  <JFXButton fx:id="confirmPane12" layoutX="95.0" layoutY="256.0" mnemonicParsing="false" onAction="#cPane12Action" prefHeight="25.0" prefWidth="119.0" text="confirm" textFill="#880e4f" />
+                  <Label fx:id="invalidPane12" layoutX="87.0" layoutY="200.0" text="invalid information or your account balance is not enough !" textFill="#c51162" visible="false" />
+                  <Label fx:id="validPane12" layoutX="136.0" layoutY="295.0" text="payed !" textFill="#00c853" visible="false" />
+               </children>
+            </Pane>
+                <Pane fx:id="accountToAccountPane" layoutX="189.0" prefHeight="400.0" prefWidth="610.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="189.60000000000002" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Label layoutX="110.0" layoutY="87.0" text="From" />
+                        <JFXTextField fx:id="firstAccountPane02" focusColor="#880e4f" labelFloat="true" layoutX="170.0" layoutY="83.0" promptText="account number" unFocusColor="#880e4f" />
+                        <JFXTextField fx:id="secondAccountPane02" focusColor="#880e4f" labelFloat="true" layoutX="388.0" layoutY="83.0" promptText="account number" unFocusColor="#880e4f" />
+                        <Label layoutX="336.0" layoutY="87.0" text="to" />
+                        <Label fx:id="invalidPane02" layoutX="170.0" layoutY="200.0" text="invalid account number or password !" textFill="#c51162" visible="false" />
+                        <JFXButton fx:id="confirmPane02" layoutX="170.0" layoutY="274.0" mnemonicParsing="false" onAction="#cPane02Action" prefHeight="25.0" prefWidth="135.0" text="confirm" textFill="#c51162" />
+                        <Label fx:id="validPane02" layoutX="224.0" layoutY="325.0" text="done !" textFill="#00c853" visible="false" />
+                        <JFXTextField fx:id="moneyPane02" focusColor="#880e4f" labelFloat="true" layoutX="170.0" layoutY="159.0" promptText="money" unFocusColor="#880e4f" />
+                    </children></Pane>
+                <Pane fx:id="profilePane" prefHeight="400.0" prefWidth="610.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="189.60000000000002" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Label layoutX="94.0" layoutY="62.0" text="Your account information :" textFill="#880e4f" />
+                  <Label fx:id="proName" layoutX="325.0" layoutY="62.0" text="name" />
+                  <Label fx:id="proPass" layoutX="438.0" layoutY="62.0" text="password" />
+                  <Label layoutX="94.0" layoutY="91.0" text="Your accounts :" textFill="#880e4f" />
+                  <Label layoutX="94.0" layoutY="167.0" text="Your card numbers :" textFill="#880e4f" />
+                  <Label layoutX="94.0" layoutY="255.0" text="Your check numbers :" textFill="#880e4f" />
+                  <Label fx:id="proAccount" layoutX="94.0" layoutY="118.0" text="no account" />
+                  <Label fx:id="proCard" layoutX="94.0" layoutY="200.0" text="no card" />
+                  <Label fx:id="proCheck" layoutX="94.0" layoutY="288.0" text="no check" />
+                  <JFXButton fx:id="updatePro" buttonType="RAISED" layoutX="88.0" layoutY="343.0" mnemonicParsing="false" onAction="#updatePro" ripplerFill="#880e4f" text="update profile info" textFill="#880e4f" />
+                  <JFXButton fx:id="savePro" buttonType="RAISED" layoutX="264.0" layoutY="343.0" mnemonicParsing="false" onAction="#savePro" text="save info in file" textFill="#880e4f" />
+                  <Label fx:id="saveLabelPro" layoutX="391.0" layoutY="347.0" text="saved !" textFill="#00c853" visible="false" />
+                  <Label fx:id="loadProfile" layoutX="94.0" layoutY="27.0" text="profile info loaded !" textFill="#00c853" visible="false" />
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="400.0" prefWidth="470.0" style="-fx-background-color: fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="329.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="206.0" layoutY="67.0" prefHeight="40.0" prefWidth="59.0" text="Log In" textFill="#880e4f" AnchorPane.leftAnchor="205.8" AnchorPane.rightAnchor="206.0" AnchorPane.topAnchor="70.0">
+                    <font>
+                        <Font name="Pristina" size="25.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="userName" focusColor="#880e4f" labelFloat="true" layoutX="108.0" layoutY="152.0" prefHeight="26.0" prefWidth="256.0" promptText="user name" unFocusColor="#880e4f" AnchorPane.leftAnchor="108.0" AnchorPane.rightAnchor="107.0" AnchorPane.topAnchor="150.0" />
+                <JFXPasswordField fx:id="password" focusColor="#880e4f" labelFloat="true" layoutX="107.0" layoutY="219.0" prefHeight="26.0" prefWidth="256.0" promptText="password" unFocusColor="#880e4f" AnchorPane.leftAnchor="107.0" AnchorPane.rightAnchor="108.0" AnchorPane.topAnchor="220.0" />
+                <JFXButton fx:id="confirm_btn" defaultButton="true" layoutX="108.0" layoutY="327.0" mnemonicParsing="false" onAction="#onAction" onMouseEntered="#confirmBtnOnMouseEntered" onMouseExited="#confirmBtnOnMouseExited" prefHeight="26.0" prefWidth="256.0" ripplerFill="#870f4f" text="Confirm" textFill="#880e4f" AnchorPane.leftAnchor="108.0" AnchorPane.rightAnchor="107.0" AnchorPane.topAnchor="327.0">
+                    <font>
+                        <Font name="Arial" />
+                    </font>
+                </JFXButton>
+                <Label fx:id="invalid_label" layoutX="107.0" layoutY="261.0" text="invalid password or username !" textFill="#c2185b" visible="false" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutY="-1.0" prefHeight="400.0" prefWidth="330.0" style="-fx-background-color: #880E4F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="76.0" layoutY="68.0" prefHeight="30.0" prefWidth="177.0" text="Welcome Back!" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="77.0" AnchorPane.topAnchor="68.0">
+                    <font>
+                        <Font name="Arial" size="25.0" />
+                    </font></Label>
+                <Label layoutX="57.0" layoutY="377.0" prefHeight="18.0" prefWidth="216.0" text="we will do your bank tasks in our bank :) " textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="55.0">
+                    <font>
+                        <Font name="Arial" size="12.0" />
+                    </font></Label>
+                <Label layoutX="115.0" layoutY="107.0" prefHeight="22.0" prefWidth="99.0" text="Bankie Bankie" textFill="WHITE" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="116.0" AnchorPane.topAnchor="107.0">
+                    <font>
+                        <Font name="Arial" size="15.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
